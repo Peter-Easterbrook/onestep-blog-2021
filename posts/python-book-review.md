@@ -1,7 +1,7 @@
 ---
 title: 'Python Book Review'
 date: 'May 7, 2021'
-excerpt: 'In this review, we will be looking at the new Python book from Oriley'
+excerpt: 'In this review, we will be looking at the new Python book from Oriley designed for beginners'
 cover_image: '/images/posts/img6.jpg'
 category: 'Python'
 author: 'Mike Richards'
