@@ -5,7 +5,7 @@ excerpt: 'Dillinger is a cloud-enabled, mobile-ready, offline-storage compatible
 AngularJS-powered HTML5 Markdown editor.'
 cover_image: '/images/posts/img9.png'
 category: 'Markdown'
-author: 'Joe Bloggs'
+author: 'Jane Bloggs'
 author_image: 'https://randomuser.me/api/portraits/women/11.jpg'
 ---
 
