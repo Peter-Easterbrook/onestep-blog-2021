@@ -12,7 +12,7 @@ export default function BlogPage({ posts, numPages, currentPage, categories }) {
     <Layout>
       <div className='flex justify-between flex-col md:flex-row'>
         <div className='w-3/4 mr-10'>
-          <h1 className='text-5xl p-5 font-normal text-gray-100 bg-gray-900 border border-gray-500 rounded-lg text-center shadow-lg'>
+          <h1 className='text-4xl p-5 font-normal text-gray-100 bg-gray-900 border border-gray-500 rounded-lg text-center shadow-lg'>
             Blog
           </h1>
           <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>

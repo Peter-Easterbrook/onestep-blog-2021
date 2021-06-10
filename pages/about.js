@@ -3,7 +3,7 @@ import Layout from '@/components/Layout';
 export default function aboutPage() {
   return (
     <Layout title='About OneStep'>
-      <h1 className='text-5xl p-5 font-normal text-gray-100 bg-gray-900 border border-gray-500 rounded-lg text-center'>
+      <h1 className='text-4xl p-5 font-normal text-gray-100 bg-gray-900 border border-gray-500 rounded-lg text-center'>
         About
       </h1>
       <div className='bg-white shadow-md rounded-lg px-10 py-6 mt-6'>

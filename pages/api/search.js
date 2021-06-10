@@ -6,6 +6,7 @@ export default (req, res) => {
   let posts;
 
   if (process.env.NODE_ENV === 'production') {
+    // Fetch from cache
     posts = require('../../cache/data').posts;
   } else {
     const files = fs.readdirSync(path.join('posts'));
@@ -26,13 +27,11 @@ export default (req, res) => {
       };
     });
   }
-
-  const results = post.filter(
+  const results = posts.filter(
     ({ frontmatter: { title, excerpt, category } }) =>
-      title.toLowercase().indexOf(req.query.q) != -1 ||
-      excerpt.toLowercase().indexOf(req.query.q) != -1 ||
-      category.toLowercase().indexOf(req.query.q) != -1
+      title.toLowerCase().indexOf(req.query.q) != -1 ||
+      excerpt.toLowerCase().indexOf(req.query.q) != -1 ||
+      category.toLowerCase().indexOf(req.query.q) != -1
   );
-
   res.status(200).json(JSON.stringify({ results }));
 };

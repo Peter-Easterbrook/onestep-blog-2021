@@ -6,7 +6,7 @@ import { getPosts } from '@/lib/posts';
 export default function HomePage({ posts }) {
   return (
     <Layout>
-      <h1 className='text-5xl p-5 font-normal text-gray-100 bg-gray-900 border border-gray-500 rounded-lg text-center'>
+      <h1 className='text-4xl p-5 font-normal text-gray-100 bg-gray-900 border border-gray-500 rounded-lg text-center'>
         Latest Posts
       </h1>
       <div className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5'>
