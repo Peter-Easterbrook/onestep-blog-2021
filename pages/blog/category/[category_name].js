@@ -7,11 +7,7 @@ import CategoryList from '@/components/CategoryList';
 import matter from 'gray-matter';
 import { getPosts } from '@/lib/posts';
 
-export default function CategoryBlogPage({
-  posts,
-  categoriesName,
-  categories,
-}) {
+export default function CategoryBlogPage({ posts, categoryName, categories }) {
   return (
     <Layout>
       <div className='flex justify-between'>
