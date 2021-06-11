@@ -25,7 +25,7 @@ export default function HomePage({ posts }) {
 export async function getStaticProps() {
   return {
     props: {
-      posts: getPosts().slice(0, 6),
+      posts: getPosts().slice(0, 4),
     },
   };
 }
