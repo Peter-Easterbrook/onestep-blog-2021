@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import Search from './Search';
 
 export default function Header() {
   return (
@@ -22,6 +23,7 @@ export default function Header() {
               About
             </a>
           </Link>
+          <Search />
         </nav>
       </div>
     </header>
