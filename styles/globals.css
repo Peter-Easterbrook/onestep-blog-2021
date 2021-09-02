@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap');
-/* ./styles/globals.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html,
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -60,7 +69,7 @@ p {
 ol {
   font-size: 110%;
   line-height: 2.3;
-  font-weight: 400;
+  font-weight: 300;
   margin: 10px 0;
 }
 
@@ -69,19 +78,19 @@ ol {
   padding: 20px;
   margin: 20px 0;
   line-height: 2.3;
-  font-wight: 400;
+  font-weight: 300;
 }
 
 .blog-text h1 {
   font-size: 2.2rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .blog-text h2,
 .blog-text h3,
 .blog-text h4 {
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 /* Fix category colors in production */
