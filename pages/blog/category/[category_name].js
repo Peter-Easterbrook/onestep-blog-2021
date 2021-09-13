@@ -12,7 +12,7 @@ export default function CategoryBlogPage({ posts, categoryName, categories }) {
     <Layout>
       <div className='flex justify-between'>
         <div className='w-3/4 mr-10'>
-          <h1 className='text-4xl p-5 font-normal text-gray-100 bg-gray-900 border border-gray-500 rounded-lg text-center'>
+          <h1 className='text-4xl p-5 font-normal text-gray-100 bg-gray-800 border border-gray-500 rounded-lg text-center'>
             Posts in {categoryName}
           </h1>
           <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
