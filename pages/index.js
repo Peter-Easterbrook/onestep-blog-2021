@@ -9,7 +9,7 @@ export default function HomePage({ posts }) {
       <h1 className='text-4xl p-5 font-normal text-gray-100 bg-gray-700 border border-gray-700 rounded-lg text-center'>
         Latest Posts
       </h1>
-      <div className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 border border-gray-700'>
+      <div className='grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5'>
         {posts.map((post, index) => (
           <Post key={index} post={post} />
         ))}
