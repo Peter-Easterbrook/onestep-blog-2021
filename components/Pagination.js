@@ -12,14 +12,20 @@ export default function Pagination({ currentPage, numPages }) {
       <ul className='flex pl-0 list-none my-2'>
         {!isFirst && (
           <Link href={prevPage}>
-            <li className='relative block py-2 px-3 leading-tight bg-gray-700 border border-white text-white mr-1 hover:bg-white hover:text-black hover:border-black cursor-pointer rounded'>
+            <li
+              key={currentPage - 1}
+              className='relative block py-2 px-3 leading-tight bg-gray-700 border border-white text-white mr-1 hover:bg-white hover:text-black hover:border-black cursor-pointer rounded'
+            >
               Previous
             </li>
           </Link>
         )}
         {Array.from({ length: numPages }, (_, i) => (
           <Link href={`/blog/page/${i + 1}`}>
-            <li className='relative block py-2 px-3 leading-tight bg-gray-700 border border-white text-white mr-1 hover:bg-white hover:text-black hover:border-black cursor-pointer rounded'>
+            <li
+              key={currentPage}
+              className='relative block py-2 px-3 leading-tight bg-gray-700 border border-white text-white mr-1 hover:bg-white hover:text-black hover:border-black cursor-pointer rounded'
+            >
               {i + 1}
             </li>
           </Link>
@@ -27,7 +33,10 @@ export default function Pagination({ currentPage, numPages }) {
 
         {!isLast && (
           <Link href={nextPage}>
-            <li className='relative block py-2 px-3 leading-tight bg-gray-700 border border-white text-white mr-1 hover:bg-white hover:text-black hover:border-black cursor-pointer rounded'>
+            <li
+              key={currentPage + 1}
+              className='relative block py-2 px-3 leading-tight bg-gray-700 border border-white text-white mr-1 hover:bg-white hover:text-black hover:border-black cursor-pointer rounded'
+            >
               Next
             </li>
           </Link>
