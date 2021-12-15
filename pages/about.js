@@ -1,6 +1,7 @@
 import Layout from '@/components/Layout';
 
 export default function aboutPage() {
+  const aboutYear = new Date().getFullYear()
   return (
     <Layout title='About OneStep'>
       <h1 className='text-4xl p-5 font-normal text-gray-100 bg-gray-800 border border-white rounded-lg text-center lg:w-3/12 md:w-6/12 sm:w-9/12 mx-auto'>
@@ -20,6 +21,7 @@ export default function aboutPage() {
           <li>Tailwind</li>
         </ul>
         <p className='font-medium'> Version 1.0.0</p>
+        <p>OneStepWeb &copy; {aboutYear} All rights reserved</p>
       </div>
     </Layout>
   );
