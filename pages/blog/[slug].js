@@ -1,8 +1,9 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import marked from 'marked';
+import { marked } from 'marked';
 import Link from 'next/link';
+import { FaRegArrowAltCircleLeft } from 'react-icons/fa';
 import Layout from '@/components/Layout';
 import CategoryLabel from '@/components/CategoryLabel';
 
@@ -13,8 +14,10 @@ export default function PostPage({
 }) {
   return (
     <Layout title={title}>
-      <div className='relative block w-24 p-2 leading-tight bg-gray-700 border border-white text-white hover:bg-white hover:text-black hover:border-black cursor-pointer rounded'>
-        <Link href='/blog'>GO BACK</Link>
+      <div className='relative block w-11 p-3 leading-tight bg-gray-700 border border-white text-white hover:bg-white hover:text-black hover:border-black cursor-pointer rounded'>
+        <Link href='/blog'>
+          <FaRegArrowAltCircleLeft />
+        </Link>
       </div>
       <div className='w-full px-10 py-6 bg-white rounded-lg shadow-md mt-6 border border-gray-700'>
         <div className='flex justify-between items-center mt-4'>

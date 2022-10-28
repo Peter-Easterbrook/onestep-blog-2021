@@ -14,10 +14,11 @@ export default function HomePage({ posts }) {
           <Post key={index} post={post} />
         ))}
       </div>
-      <Link href='/blog'>
-        <a className='block text-center border border-gray-500 text-gray-100 rounded-md py-4 my-5 transition duration-500 ease select-none bg-gray-700 hover:text-black hover:bg-gray-100 focus:outline-none shadow-lg w-full'>
-          All Posts
-        </a>
+      <Link
+        href='/blog'
+        className='block text-center border border-gray-500 text-gray-100 rounded-md py-4 my-5 transition duration-500 ease select-none bg-gray-700 hover:text-black hover:bg-gray-100 focus:outline-none shadow-lg w-full'
+      >
+        All Posts
       </Link>
     </Layout>
   );

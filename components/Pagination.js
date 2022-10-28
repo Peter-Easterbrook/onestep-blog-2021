@@ -1,5 +1,5 @@
 import Link from 'next/link';
-
+import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs';
 export default function Pagination({ currentPage, numPages }) {
   const isFirst = currentPage === 1;
   const isLast = currentPage === numPages;
@@ -14,9 +14,9 @@ export default function Pagination({ currentPage, numPages }) {
           <Link href={prevPage}>
             <li
               key={currentPage - 1}
-              className='relative block py-2 px-3 leading-tight bg-gray-700 border border-white text-white mr-1 hover:bg-white hover:text-black hover:border-black cursor-pointer rounded'
+              className='relative block py-3 px-3 leading-tight bg-gray-700 border border-white text-white mr-1 hover:bg-white hover:text-black hover:border-black cursor-pointer rounded'
             >
-              Previous
+              <BsArrowLeftCircle />
             </li>
           </Link>
         )}
@@ -24,7 +24,7 @@ export default function Pagination({ currentPage, numPages }) {
           <Link href={`/blog/page/${i + 1}`}>
             <li
               key={currentPage}
-              className='relative block py-2 px-3 leading-tight bg-gray-700 border border-white text-white mr-1 hover:bg-white hover:text-black hover:border-black cursor-pointer rounded'
+              className='relative block py-2 px-4 leading-tight bg-gray-700 border border-white text-white mr-1 hover:bg-white hover:text-black hover:border-black cursor-pointer rounded'
             >
               {i + 1}
             </li>
@@ -35,9 +35,9 @@ export default function Pagination({ currentPage, numPages }) {
           <Link href={nextPage}>
             <li
               key={currentPage + 1}
-              className='relative block py-2 px-3 leading-tight bg-gray-700 border border-white text-white mr-1 hover:bg-white hover:text-black hover:border-black cursor-pointer rounded'
+              className='relative block py-3 px-3 leading-tight bg-gray-700 border border-white text-white mr-1 hover:bg-white hover:text-black hover:border-black cursor-pointer rounded'
             >
-              Next
+              <BsArrowRightCircle />
             </li>
           </Link>
         )}

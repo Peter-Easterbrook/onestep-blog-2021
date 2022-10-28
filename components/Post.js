@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import CategoryLabel from './CategoryLabel';
 
 export default function Post({ post, compact }) {
@@ -22,18 +22,22 @@ export default function Post({ post, compact }) {
       </div>
 
       <div className='mt-2'>
-        <Link href={`/blog/${post.slug}`}>
-          <a className='text-2xl text-gray-700 font-medium hover:underline'>
-            {post.frontmatter.title}
-          </a>
+        <Link
+          href={`/blog/${post.slug}`}
+          className='text-2xl text-gray-700 font-medium hover:underline'
+        >
+          {post.frontmatter.title}
         </Link>
         <p className='mt-2 text-gray-600'>{post.frontmatter.excerpt}</p>
       </div>
 
       {!compact && (
         <div className='flex justify-between items-center mt-6'>
-          <Link href={`/blog/${post.slug}`}>
-            <a className='text-gray-900 hover:text-blue-600'>Read More</a>
+          <Link
+            href={`/blog/${post.slug}`}
+            className='text-gray-900 hover:text-blue-600'
+          >
+            Read More
           </Link>
           <div className='flex items-center'>
             <img

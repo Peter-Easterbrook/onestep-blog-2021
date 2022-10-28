@@ -112,3 +112,6 @@ ol {
 .bg-orange-600 {
   background-color: #ff6600;
 }
+.shadow-inner {
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.6);
+}
