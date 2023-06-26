@@ -9,11 +9,15 @@ export default function Pagination({ currentPage, numPages }) {
   if (numPages === 1) return <></>;
   return (
     <div className='mt-6 mx-auto'>
-      <ul className='flex pl-0 list-none my-2'>
+      <ul
+        className='flex pl-0 list-none my-2'
+        style={{ justifyContent: 'center' }}
+      >
         {!isFirst && (
           <Link href={prevPage}>
             <li
-              key={currentPage - 1}
+              // key={currentPage - 1}
+              key={`prev-${currentPage - 1}`}
               className='relative block py-3 px-3 leading-tight bg-gray-700 border border-white text-white mr-1 hover:bg-white hover:text-black hover:border-black cursor-pointer rounded'
             >
               <BsArrowLeftCircle />
@@ -21,10 +25,11 @@ export default function Pagination({ currentPage, numPages }) {
           </Link>
         )}
         {Array.from({ length: numPages }, (_, i) => (
-          <Link href={`/blog/page/${i + 1}`}>
+          <Link href={`/blog/page/${i + 1}`} key={`page-${i + 1}`}>
             <li
-              key={currentPage}
-              className='relative block py-2 px-4 leading-tight bg-gray-700 border border-white text-white mr-1 hover:bg-white hover:text-black hover:border-black cursor-pointer rounded'
+              // key={currentPage}
+              key={`page-${i + 1}`}
+              className='relative block py-2 px-4 text-lg leading-tight bg-gray-700 border border-white text-white mr-1 hover:bg-white hover:text-black hover:border-black cursor-pointer rounded'
             >
               {i + 1}
             </li>
@@ -34,7 +39,8 @@ export default function Pagination({ currentPage, numPages }) {
         {!isLast && (
           <Link href={nextPage}>
             <li
-              key={currentPage + 1}
+              // key={currentPage + 1}
+              key={`next-${currentPage + 1}`}
               className='relative block py-3 px-3 leading-tight bg-gray-700 border border-white text-white mr-1 hover:bg-white hover:text-black hover:border-black cursor-pointer rounded'
             >
               <BsArrowRightCircle />
