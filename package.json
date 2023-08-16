@@ -15,15 +15,15 @@
   "dependencies": {
     "gray-matter": "^4.0.3",
     "marked": "^4.3.0",
-    "next": "^13.4.7",
+    "next": "^13.4.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
+    "autoprefixer": "^10.4.15",
     "husky": "^8.0.3",
-    "postcss": "^8.4.24",
-    "tailwindcss": "^3.3.2"
+    "postcss": "^8.4.28",
+    "tailwindcss": "^3.3.3"
   }
 }
