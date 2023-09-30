@@ -1,10 +1,10 @@
-import Link from 'next/link';
 import Image from 'next/legacy/image';
+import Link from 'next/link';
 import CategoryLabel from './CategoryLabel';
 
 export default function Post({ post, compact }) {
   return (
-    <div className='w-full px-8 py-6 bg-white rounded-lg shadow-md mt-6 border border-gray-700'>
+    <div className='w-full px-8 py-6 bg-white rounded-lg shadow-md mt-6 border border-gray-700 homepage'>
       {!compact && (
         <Image
           src={post.frontmatter.cover_image}
