@@ -42,10 +42,6 @@ body::-webkit-scrollbar-thumb:hover {
 body::-webkit-scrollbar-track {
   background: #111827;
 }
-html {
-  scrollbar-width: thin;
-  scrollbar-color: #8b92a5 #111827;
-}
 
 .homepage {
   animation: fadeUpAnimation 2000ms ease-out 1 forwards;
