@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import Image from 'next/legacy/image';
+import Link from 'next/link';
 import Search from './Search';
 
 export default function Header() {
@@ -7,7 +7,7 @@ export default function Header() {
     <header className='bg-gray-800 text-gray-100 shadow w-full'>
       <div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center'>
         <Link
-          href='https://pe-wd-resume.vercel.app/'
+          href='https://blog.onestepweb.dev/'
           className='flex md:w-2/5 items-center md:justify-start mb-4 md:mb-0'
         >
           <span className='mr-3 text-4xl'>OneStep </span>

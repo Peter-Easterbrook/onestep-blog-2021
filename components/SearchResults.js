@@ -1,14 +1,13 @@
 import Post from './Post';
-
-export default function SearchResults({ results }) {
-  if (results.length === 0) return <></>;
+export default function SearchResults({ results = [] }) {
+  if (!results || results.length === 0) return null;
 
   return (
     <div className='absolute top-20 right-0 md:right-10 z-10 border-2 border-gray-500 bg-white text-black w-full rounded-2xl'>
       <div className='py-4 px-4'>
         <h2 className='text-2xl mb-3'>{results.length} Results</h2>
         {results.map((result, index) => (
-          <Post key={index} post={result} compact={true} />
+          <Post key={result.id || index} post={result} compact={true} />
         ))}
       </div>
     </div>
