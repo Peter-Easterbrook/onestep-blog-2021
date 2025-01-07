@@ -16,11 +16,10 @@ export default function Pagination({ currentPage, numPages }) {
         {!isFirst && (
           <Link href={prevPage}>
             <li
-              // key={currentPage - 1}
               key={`prev-${currentPage - 1}`}
-              className='relative block py-3 px-3 leading-tight bg-gray-700 border border-white text-white mr-1 hover:bg-white hover:text-black hover:border-black cursor-pointer rounded'
+              className='relative block py-2 px-2 leading-tight bg-gray-700 border border-white text-white mr-1 hover:bg-white hover:text-black hover:border-black cursor-pointer rounded'
             >
-              <BsArrowLeftCircle />
+              <BsArrowLeftCircle className='w-6 h-6' />
             </li>
           </Link>
         )}
@@ -41,9 +40,9 @@ export default function Pagination({ currentPage, numPages }) {
             <li
               // key={currentPage + 1}
               key={`next-${currentPage + 1}`}
-              className='relative block py-3 px-3 leading-tight bg-gray-700 border border-white text-white mr-1 hover:bg-white hover:text-black hover:border-black cursor-pointer rounded'
+              className='relative block py-2 px-2 leading-tight bg-gray-700 border border-white text-white mr-1 hover:bg-white hover:text-black hover:border-black cursor-pointer rounded'
             >
-              <BsArrowRightCircle />
+              <BsArrowRightCircle className='w-6 h-6' />
             </li>
           </Link>
         )}

@@ -1,11 +1,11 @@
+import CategoryLabel from '@/components/CategoryLabel';
+import Layout from '@/components/Layout';
 import fs from 'fs';
-import path from 'path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
 import Link from 'next/link';
-import { FaRegArrowAltCircleLeft } from 'react-icons/fa';
-import Layout from '@/components/Layout';
-import CategoryLabel from '@/components/CategoryLabel';
+import path from 'path';
+import { BsArrowLeftCircle } from 'react-icons/bs';
 
 export default function PostPage({
   frontmatter: { title, category, date, cover_image, author, author_image },
@@ -14,9 +14,9 @@ export default function PostPage({
 }) {
   return (
     <Layout title={title}>
-      <div className='relative block w-11 p-3 leading-tight bg-gray-700 border border-white text-white hover:bg-white hover:text-black hover:border-black cursor-pointer rounded'>
+      <div className='relative block w-11 px-2 py-2 leading-tight bg-gray-700 border border-white text-white hover:bg-white hover:text-black hover:border-black cursor-pointer rounded'>
         <Link href='/blog'>
-          <FaRegArrowAltCircleLeft />
+          <BsArrowLeftCircle style={{ width: '1.5rem', height: '1.5rem' }} />
         </Link>
       </div>
       <div className='w-full px-10 py-6 bg-white rounded-lg shadow-md mt-6 border border-gray-700'>
