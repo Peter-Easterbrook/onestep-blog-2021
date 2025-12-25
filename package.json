@@ -6,19 +6,20 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack=false",
     "build": "next build",
     "start": "next start",
     "cache-posts": "node scripts/cache.js"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
     "gray-matter": "^4.0.3",
     "marked": "^17.0.1",
     "next": "^16.1.1",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "react-icons": "^5.5.0",
-    "@tailwindcss/postcss": "^4.1.18"
+    "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
     "postcss": "^8.5.6"
