@@ -9,7 +9,7 @@
     "cache-posts": "node scripts/cache.js"
   },
   "dependencies": {
-    "@tailwindcss/postcss": "^4.2.4",
+    "@tailwindcss/postcss": "^4.3.0",
     "gray-matter": "^4.0.3",
     "marked": "^18.0.3",
     "next": "^16.2.4",
@@ -19,6 +19,6 @@
     "tailwindcss": "^4.2.4"
   },
   "devDependencies": {
-    "postcss": "^8.5.13"
+    "postcss": "^8.5.14"
   }
 }
