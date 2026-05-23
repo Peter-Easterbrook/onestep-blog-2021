@@ -19,7 +19,7 @@
     "tailwindcss": "^4.3.0"
   },
   "devDependencies": {
-    "postcss": "^8.5.14"
+    "postcss": "^8.5.15"
   },
   "overrides": {
     "next": {
